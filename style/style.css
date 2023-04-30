@@ -211,8 +211,8 @@
 }
 
 .swiper {
-  width: 81%;
-  margin: 50px auto 0 auto !important;
+  width: 83%;
+  margin: 50px 0 0 auto !important;
   padding: 45px 100px 50px 100px !important;
 }
 
@@ -224,7 +224,6 @@
        column-gap: 50px;
 }
 .swiper-slide__slide-1 {
-  max-width: 280px;
   width: 110%;
 }
 .swiper-slide__slide-2 {
@@ -235,16 +234,13 @@
   width: 100%;
 }
 .swiper-slide__slide-3 {
-  max-width: 280px;
   margin-left: -22px;
   width: 110%;
 }
 .swiper-slide__slide-4 {
-  max-width: 280px;
   width: 110%;
 }
 .swiper-slide__slide-5 {
-  max-width: 280px;
   width: 110%;
 }
 .swiper-slide__slide-6 {

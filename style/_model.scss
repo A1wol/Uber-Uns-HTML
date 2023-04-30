@@ -247,8 +247,8 @@
 }
 
 .swiper {
-    width: 81%;
-    margin: 50px auto 0 auto !important;
+    width: 83%;
+    margin: 50px 0 0 auto !important;
     padding: 45px 100px 50px 100px !important;
 }
 
@@ -259,7 +259,6 @@
     column-gap: 50px;
 
     &__slide-1 {
-        max-width: 280px;
         width: 110%;
     }
 
@@ -273,18 +272,15 @@
     }
 
     &__slide-3 {
-        max-width: 280px;
         margin-left: -22px;
         width: 110%;
     }
 
     &__slide-4 {
-        max-width: 280px;
         width: 110%;
     }
 
     &__slide-5 {
-        max-width: 280px;
         width: 110%;
     }
 
