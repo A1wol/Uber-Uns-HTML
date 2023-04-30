@@ -143,6 +143,8 @@
 
         img {
             width: 51%;
+            height: 490px;
+            object-fit: cover;
         }
     }
 
@@ -245,6 +247,7 @@
 }
 
 .swiper {
+    width: 81%;
     margin: 50px !important;
     padding: 45px 100px 50px 100px !important;
 }
@@ -253,7 +256,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 20px;
-    gap: 23px;
+    column-gap: 50px;
+
+    &__slide-1 {
+        max-width: 280px;
+        width: 110%;
+    }
 
     &__slide-2 {
         grid-column: 2/4;
@@ -264,6 +272,21 @@
         }
     }
 
+    &__slide-3 {
+        max-width: 280px;
+        margin-left: -22px;
+        width: 110%;
+    }
+
+    &__slide-4 {
+        max-width: 280px;
+        width: 110%;
+    }
+
+    &__slide-5 {
+        max-width: 280px;
+        width: 110%;
+    }
 
     &__slide-6 {
         grid-column: 3/5;
@@ -310,7 +333,7 @@
 
 .swiper-button-next {
     margin-top: -10px !important;
-    right: 20px !important;
+    right: 50px !important;
 
     &::after {
         content: "" !important;
@@ -321,10 +344,6 @@
     width: 16px !important;
     height: 16px !important;
     margin: 20px 5px 0px 5px !important;
-}
-
-.swiper-pagination {
-    margin-left: 15px;
 }
 
 .swiper-pagination-bullet-active {
@@ -458,8 +477,8 @@
 
             img {
                 width: 52%;
-                background-size: cover;
                 height: 300px;
+                object-fit: cover;
             }
         }
     }
@@ -500,7 +519,6 @@
         &__slide-1 {
             grid-column: 1/5;
             grid-row: 1;
-            width: 100%;
 
             img {
                 width: 100%;
@@ -575,10 +593,6 @@
 
     #modalImg {
         width: 95%;
-    }
-
-    .swiper-pagination {
-        margin-left: 0;
     }
 
     .swiper-pagination-bullet {
