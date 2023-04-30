@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 130px;
+    padding: 0px 130px;
     height: 104px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 
@@ -25,7 +25,7 @@
     }
 
     &__option {
-        margin-left: 24px;
+        margin-left: 25px;
 
         &--active {
             margin-left: 24px;
@@ -59,7 +59,7 @@
     &__chevron {
         display: flex;
         align-items: center;
-        margin: 0 14px 0 14px;
+        margin: 0 14px 0 8px;
     }
 
     &__parent-link {
@@ -67,7 +67,8 @@
         line-height: 24px;
         letter-spacing: 0.01em;
         text-align: left;
-        margin-left: 11px;
+        font-size: 14px;
+        margin-left: 5px;
     }
 
     &__current-site {
@@ -75,6 +76,7 @@
         font-weight: 700;
         letter-spacing: 0.01em;
         text-align: left;
+        font-size: 14px;
     }
 
     &__rectangles {
@@ -88,7 +90,7 @@
         display: flex;
         width: 100%;
         height: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
 
     &__baner-text {
@@ -128,23 +130,26 @@
 
     &__horizontal-image {
         img {
-            width: 80%;
+            width: 91%;
+            height: 300px;
+            object-fit: cover;
         }
     }
 
     &__vertical-image {
         display: flex;
         justify-content: flex-end;
-        margin-top: -150px;
+        margin-top: -160px;
 
         img {
-            width: 50%;
+            width: 51%;
         }
     }
 
     &__text {
-        margin: 0 130px 0 30px;
+        margin: 0 130px 0 52px;
         color: $base-text-color;
+        text-align: justify;
     }
 
     &__introduction {
@@ -153,6 +158,7 @@
         line-height: 27px;
         letter-spacing: 0em;
         margin-bottom: 18px;
+        margin-top: -15px;
     }
 
     &__description {
@@ -162,7 +168,7 @@
         letter-spacing: 0em;
 
         div {
-            margin-bottom: 22px;
+            margin-bottom: 24px;
         }
     }
 }
@@ -171,7 +177,7 @@
     display: flex;
 
     &__text {
-        margin: 0 30px 30px 130px;
+        margin: -12px 10px 30px 130px;
     }
 
     &__introduction {
@@ -180,20 +186,29 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0em;
-        margin-bottom: 30px
+        margin-bottom: 32px;
+        margin-top: -5px;
+        text-align: justify;
     }
 
     &__list-header {
         font-weight: 500;
-        margin-bottom: 22px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 26px;
     }
 
     &__list {
         font-weight: 500;
+        line-height: 26px;
+        font-size: 14px;
 
         ul {
             list-style-type: none;
             display: inline-block;
+            padding-left: 0px;
+            margin-left: 31px;
+            margin-bottom: 20px;
 
             li {
                 position: relative;
@@ -201,10 +216,10 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    width: 18px;
-                    height: 18px;
-                    left: -35px;
-                    top: 2px;
+                    width: 13px;
+                    height: 13px;
+                    left: -30px;
+                    bottom: 5px;
                     background-color: $base-blue;
                 }
             }
@@ -213,11 +228,14 @@
 
     &__summary {
         font-weight: 500;
+        line-height: 26px;
+        font-size: 14px;
     }
 
     &__image {
-        min-width: 50%;
-        margin-top: 80px;
+        min-width: 46%;
+        margin-top: 70px;
+        margin-left: 60px;
 
         img {
             width: 100%;
@@ -227,33 +245,48 @@
 }
 
 .swiper {
-    margin-top: 30px;
     margin: 50px !important;
-    padding: 50px !important;
+    padding: 45px 100px 50px 100px !important;
 }
 
 .swiper-slide {
     display: grid;
-    gap: 10px;
+    row-gap: 20px;
+    gap: 23px;
 
     &__slide-2 {
         grid-column: 2/4;
+        max-width: 100% !important;
+        width: 565px !important;
         grid-row: 1;
 
+        img {
+            width: 100%;
+        }
     }
 
     &__slide-6 {
         grid-column: 3/5;
+        width: 565px !important;
         grid-row: 2;
+        max-width: 100% !important;
+
+        img {
+            width: 100%;
+        }
+
     }
 
     div {
+        max-width: 280px;
+        width: 300px;
 
         img {
+            max-width: 100%;
+            max-height: 100%;
             object-fit: cover;
-            width: 100%;
-            height: 200px;
-            border-radius: 15px;
+            height: 325px;
+            border-radius: 10px;
             opacity: 0.85;
 
             &:hover {
@@ -264,13 +297,45 @@
 }
 
 .swiper-slide-prev {
-    margin-left: -80px;
-    margin-right: 80px;
+    margin-left: -140px;
+    margin-right: 140px;
 }
 
 .swiper-slide-next {
-    margin-right: -80px;
-    margin-left: 80px;
+    margin-right: -140px;
+    margin-left: 140px;
+}
+
+.swiper-button-prev {
+    margin-top: -10px !important;
+    left: 50px !important;
+
+    &::after {
+        content: "" !important;
+    }
+}
+
+.swiper-button-next {
+    margin-top: -10px !important;
+    right: 20px !important;
+
+    &::after {
+        content: "" !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    margin: 20px 5px 0px 5px !important;
+}
+
+.swiper-pagination {
+    margin-left: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $base-blue !important;
 }
 
 .modal__header {
@@ -289,7 +354,9 @@
     display: none;
     position: unset;
     color: white;
-    @include flexCenter(column);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     z-index: 1;
     left: 0;
     top: 0;
